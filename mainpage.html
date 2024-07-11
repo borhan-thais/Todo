@@ -9,25 +9,25 @@
 <body>
     <div class="outerDiv flex items-center min-h-screen justify-center">
       <div class="cardBody w-3/4 text-center h-auto p-10 shadow-2xl rounded-md">
-        <section class="title text-4xl font-bold">
-          <h1 class="-mb-4">Task Manager</h1>
+        <section class="title text-lg sm:text-4xl font-bold">
+          <h1 class="mb-4 sm:-mb-4 ">Task Manager</h1>
           <span class=" text-base font-normal  text-gray-500 mt-{-4px}">Stay organized and productive with our intutive to-do app.</span>
         </section>
         <form class="pt-5">
-          <input type="text" placeholder="Add a new task in todo" class="addInput focus:placeholder-transparent border mt-4 mr-5 h-10 w-2/5 rounded-lg bg-gray-100 p-5">
+          <input type="text" placeholder="Add a new task in todo" class="addInput focus:placeholder-transparent border mt-4 mr-5 h-10 w-2/5 mb-10 rounded-lg bg-gray-100 p-5 sm:mb-0">
           <button class="addButton border text-white bg-gray-900 w-32 h-10 rounded-lg ">Add Task</button>
         </form>
-        <section class="cards justify-center card flex flex-row gap-10">
+        <section class="cards justify-center card flex flex-col gap-10 sm:flex-row">
 
 
-          <div class="todoCard w-96 h-60  border rounded-lg shadow-lg mt-10 mb-10">
+          <div class="todoCard w-56 h-50 border rounded-lg shadow-lg mt-10 mb-10 sm:w-96 sm:h-60 sm:ml-0">
             <section class="todoBody rounded-t-lg cardHeading h-14 bg-blue-100 text-left font-bold p-4">To Do
             </section>
             <div class="mainBody overflow-y-scroll h-40 flex flex-col items-start  p-5"></div>
           </div>
 
 
-          <div class="progressCard w-96 h-60 border rounded-lg shadow-lg mt-10 mb-10">
+          <div class="progressCard w-56 h-50  border rounded-lg shadow-lg mt-10 mb-10 sm:w-96 sm:h-60">
             <section class="rounded-t-lg cardHeading h-14 bg-purple-50 text-left font-bold p-4">In Progess
             </section>
             <div class="progressList overflow-y-scroll h-40 flex flex-col items-start  p-5">
@@ -35,7 +35,7 @@
           </div>
 
 
-          <div class="completedCard w-96 h-60  border rounded-lg shadow-lg mt-10 mb-10">
+          <div class="completedCard w-56 h-50  border rounded-lg shadow-lg mt-10 mb-10 sm:w-96 sm:h-60">
             <section class="rounded-t-lg cardHeading h-14 bg-green-100 text-left font-bold p-4">Completed</section>
             <div class="completedList flex flex-col items-start  p-5 overflow-y-scroll h-40">
             </div>
